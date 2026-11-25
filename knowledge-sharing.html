@@ -93,7 +93,6 @@
             </p>
         </div>
 
-
         <div class="category-grid">
 
             <div class="category-card" data-category="news">
@@ -156,6 +155,7 @@
             </p>
         </div>
 
+        <!-- EXISTING PRACTICE CARDS -->
         <div class="practice-grid">
 
             <article class="practice-card">
@@ -198,7 +198,8 @@
             </article>
 
         </div>
-    </section>
+
+</section>
 
     <!-- KNOWLEDGE LIBRARY -->
     <section class="section" id="resources">
@@ -367,6 +368,149 @@
             No resources found. Try another keyword or category.
         </p>
 
+
+
+    </section>
+
+    <!-- PRESENTATION SHOWCASE -->
+    <section class="section alternate-section">
+
+        <div class="presentation-showcase">
+
+    <div class="presentation-heading">
+        <span class="eyebrow">PRESENTATION SHOWCASE</span>
+
+        <h2>Knowledge Sharing Samples</h2>
+
+        <p>
+            Explore sample presentations from different squads.
+            These previews demonstrate how knowledge and
+            experiences can be shared across teams.
+        </p>
+    </div>
+
+    <div class="presentation-grid">
+
+        <!-- SQUAD 1 -->
+        <article class="presentation-card">
+
+            <div class="presentation-image-wrapper">
+
+                <img
+                    src="images/s2s1.png"
+                    alt="Squad 1 sample presentation preview"
+                    class="presentation-image"
+                    data-slides="images/s2s1.png,images/s2s2.png"
+                    data-title="Squad 2: The Auto-mators"
+                >
+
+                <span class="slide-label">Preview · Slide 1</span>
+
+                <div class="preview-overlay">
+                    <span>View Presentation</span>
+                </div>
+
+            </div>
+
+            <div class="presentation-info">
+
+                <span class="tag">KNOWLEDGE SHARING</span>
+
+                <h3>Squad 2: The Auto-mators</h3>
+
+                <p>
+                    Sample slides showcasing knowledge and
+                    experiences shared by the team.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- SQUAD 2 -->
+        <article class="presentation-card">
+
+            <div class="presentation-image-wrapper">
+
+                <img
+                    src="images/s3s1.png"
+                    alt="Squad 2 sample presentation preview"
+                    class="presentation-image"
+                    data-slides="images/s3s1.png,images/s3s2.png"
+                    data-title="Squad 1: The Alignment Avengers"
+                >
+
+                <span class="slide-label">Preview · Slide 1</span>
+
+                <div class="preview-overlay">
+                    <span>View Presentation</span>
+                </div>
+
+            </div>
+
+            <div class="presentation-info">
+
+                <span class="tag">KNOWLEDGE SHARING</span>
+
+                <h3>Squad 1: The Alignment Avengers</h3>
+
+                <p>
+                    Sample slides showcasing knowledge and
+                    experiences shared by the team.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- SQUAD 4 -->
+        <article class="presentation-card">
+
+            <div class="presentation-image-wrapper">
+
+                <img
+                    src="images/s1s1.png"
+                    alt="Squad 4 sample presentation preview"
+                    class="presentation-image"
+                    data-slides="images/s1s1.png,images/s1s2.png"
+                    data-title="Squad 4: The Data Defenders"
+                >
+
+                <span class="slide-label">Preview · Slide 1</span>
+
+                <div class="preview-overlay">
+                    <span>View Presentation</span>
+                </div>
+
+            </div>
+
+            <div class="presentation-info">
+
+                <span class="tag">KNOWLEDGE SHARING</span>
+
+                <h3>Squad 4: The Data Defenders</h3>
+
+                <p>
+                    Sample slides showcasing knowledge and
+                    experiences shared by the team.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <p class="presentation-note">
+        ℹ️ These images are sample previews for demonstration
+        purposes only. They do not represent the complete
+        presentation files.
+    </p>
+
+</div>
+
     </section>
 
     <!-- ABOUT / CLOSING -->
@@ -392,7 +536,7 @@
     <p>Connecting People Through Shared Knowledge.</p>
 </footer>
 
-<!-- RESOURCE MODAL -->
+<!-- EXISTING RESOURCE MODAL -->
 <div class="modal" id="resourceModal">
     <div class="modal-content">
         <button class="close-modal" id="closeModal">&times;</button>
@@ -409,6 +553,64 @@
             Close
         </button>
     </div>
+</div>
+
+<!-- PRESENTATION SLIDE VIEWER MODAL -->
+<div class="presentation-modal" id="presentationModal">
+
+    <div class="presentation-modal-content">
+
+        <button
+            class="presentation-modal-close"
+            id="closePresentationModal"
+            aria-label="Close presentation"
+        >
+            &times;
+        </button>
+
+        <div class="presentation-modal-header">
+            <span class="eyebrow">SAMPLE PRESENTATION</span>
+            <h2 id="presentationModalTitle">Squad Presentation</h2>
+        </div>
+
+        <div class="presentation-viewer">
+
+            <button
+                type="button"
+                class="slide-nav prev-slide"
+                id="prevSlide"
+                aria-label="Previous slide"
+            >
+                &#10094;
+            </button>
+
+            <img
+                src=""
+                alt="Presentation slide"
+                id="presentationModalImage"
+            >
+
+            <button
+                type="button"
+                class="slide-nav next-slide"
+                id="nextSlide"
+                aria-label="Next slide"
+            >
+                &#10095;
+            </button>
+
+        </div>
+
+        <div class="slide-counter" id="slideCounter">
+            Slide 1 of 2
+        </div>
+
+        <p class="presentation-modal-caption">
+            Sample image for demonstration purposes only.
+        </p>
+
+    </div>
+
 </div>
 
 <script src="script.js"></script>
